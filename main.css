@@ -1,0 +1,55 @@
+body { 
+    background-color: #141217;
+}
+
+/* Starting PopUp */
+.popup-open {
+    background-color: #eb888d;
+    text-align: center;
+    position: fixed;
+    inset: 0px;
+    width: 30rem;
+    height: 20rem;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    display: block;
+    border: 10px solid #5baac8;
+    border-radius: 5px;
+}
+.popup-open h1 {
+    margin: 0;
+}
+.popup-open p {
+    margin: 0;
+}
+
+.top-bar {
+    padding-bottom: 2px;
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #5baac8;
+}
+
+.close-btn {
+    cursor: pointer;
+    border: 1px solid;
+    width: 5%;
+    vertical-align: top;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    display: flex;
+}
+
+.close-btn:hover {
+    background-color: gray;
+}
+
+.accept-btn {
+    height: 40px;
+    width: 100px;
+}
+
+/* Main */
