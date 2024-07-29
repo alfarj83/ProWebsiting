@@ -7,17 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <script src="main.js"></script>
     <link rel="stylesheet" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
 </head>
 
 <body>
     <div class="popup-open" id="popup">
-        <div class="top-bar"> 
+        <div class="popup-top-bar"> 
             <p>A Chance Encounter!</p> 
             <button class="close-btn" onclick="closePopup()"><span>&times;</span></button>
         </div>
-        <h1> You have found...</h1>
-        <img src="images/JAM2.png" draggable="false" width="35%" height="auto" position="absolute" top="100px" alt="Jamie Alfaro"/>
-        <p>A Jar of Jam!</p>
-        <button class="accept-btn" onclick="closePopup()"> <p>OKI...</p></button>
+        <div class="popup-content">
+            <p> <strong> You have found a jar of jam.</strong></p>
+        </div>
+        <img src="images/JAM2.png" draggable="false" width="20%" height="auto" position="absolute" top="100px" alt="Jamie Alfaro"/>
+        <div>
+            <button class="accept-btn" onclick="closePopup()"> <p>OK</p></button>
+        </div>
     </div>
 </body>

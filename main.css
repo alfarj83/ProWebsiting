@@ -1,10 +1,11 @@
 body { 
     background-color: #141217;
+    font-family: 'IBM Plex Mono';
 }
 
 /* Starting PopUp */
 .popup-open {
-    background-color: #eb888d;
+    background-color: #feae97;
     text-align: center;
     position: fixed;
     inset: 0px;
@@ -14,8 +15,9 @@ body {
     max-height: 100dvh;
     margin: auto;
     display: block;
-    border: 10px solid #5baac8;
+    border: 10px solid #4a6475;
     border-radius: 5px;
+    overflow: hidden;
 }
 .popup-open h1 {
     margin: 0;
@@ -23,13 +25,17 @@ body {
 .popup-open p {
     margin: 0;
 }
-
-.top-bar {
+.popup-top-bar {
     padding-bottom: 2px;
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: #5baac8;
+    background-color: #4a6475;
+    color: #9bb1b5;
+}
+.popup-content p {
+    padding: 30px;
+    margin-top: 10px;
 }
 
 .close-btn {
@@ -41,15 +47,73 @@ body {
     right: 0px;
     position: absolute;
     display: flex;
+    background-color: #feae97;
 }
-
 .close-btn:hover {
-    background-color: gray;
+    background-color: #9bb1b5;
 }
 
 .accept-btn {
-    height: 40px;
-    width: 100px;
+    margin: 30px;
+    height: 50px;
+    width: 150px;
+    background-color: #feae97;
+    font-family: 'IBM Plex Mono';
+    font-size: 30px;
+}
+
+/* Navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    float: right;
+}
+.navbar li {
+    display: inline;
+    float: right;
+}
+.navbar li a {
+    color: #f3ae97;
+    padding: 10px;
+    text-decoration: none;
 }
 
 /* Main */
+.greetings h2 {
+    color: #9bb1b5;
+}
+.greetings h1 {
+    color: #f3ae97;
+    font-size: 70px;
+}
+.greetings p {
+    color: #999ea4;
+}
+
+/* About */
+.about {
+    margin: 50px;
+}
+.about h3 {
+    color: #f3ae97;
+    padding: px;
+    padding-top: 100px;
+    font-size: 2em;
+}
+.about a {
+    color: #f3ae97;
+    text-decoration: none;
+}
+.about a:hover{
+    text-decoration: underline;
+}
+hr {
+    border-color: #9bb1b5;
+    width: 30%;
+    display: flex;
+    transform: translate(-110%);
+    margin-top: 50px;
+}
