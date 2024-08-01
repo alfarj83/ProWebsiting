@@ -1,6 +1,7 @@
 body { 
     background-color: #141217;
     font-family: 'IBM Plex Mono';
+    padding: 20px;
 }
 
 /* Starting PopUp */
@@ -52,7 +53,6 @@ body {
 .close-btn:hover {
     background-color: #9bb1b5;
 }
-
 .accept-btn {
     margin: 30px;
     height: 50px;
@@ -70,6 +70,7 @@ body {
     width: 100%;
     top: 0;
     float: right;
+    margin-right: 40px;
 }
 .navbar li {
     display: inline;
@@ -81,16 +82,40 @@ body {
     text-decoration: none;
 }
 
-/* Main */
-.greetings h2 {
+/* Home */
+.greetings {
+    margin: 50px;
+    display: flex;
+}
+.greetings-intro h2 {
     color: #9bb1b5;
+    padding-top: 100px;
+    margin-bottom: 0;
+    display: block;
+    font-size: 3em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 400;
+    height: 20px;
 }
-.greetings h1 {
+.greetings-name h1 {
     color: #f3ae97;
-    font-size: 70px;
+    font-size: 150px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    font-weight: 900;
+    height: 150px;
+    margin-inline-start: -10px;
 }
-.greetings p {
+.greetings-name p {
+    color: #9bb1b5;
+    margin-inline-start: 30px;
+    display: flex;
+}
+.greetings-blurb {
     color: #999ea4;
+    display: flex;
 }
 
 /* About */
@@ -116,4 +141,9 @@ hr {
     display: flex;
     transform: translate(-110%);
     margin-top: 50px;
+}
+
+/* Projects */
+.projects {
+    margin: 50px;
 }

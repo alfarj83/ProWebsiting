@@ -5,4 +5,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 function closePopup() {
     popup.style.display = 'none';
+    window.location.href='home.html';
 }
