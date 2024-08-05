@@ -1,2 +1,2 @@
 # ProWebsiting
-Possible updated design for personal portfolio
+Current (WIP) design of my personal portfolio
