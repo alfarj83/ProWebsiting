@@ -63,70 +63,110 @@ body {
 }
 
 /* Navbar */
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.navbar {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
+    position: fixed;
+    background-color: #141217;
     top: 0;
-    float: right;
-    margin-right: 40px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
 }
 .navbar li {
     display: inline;
-    float: right;
 }
 .navbar li a {
     color: #f3ae97;
     padding: 10px;
     text-decoration: none;
 }
+.navbar li a:hover {
+    text-decoration: underline;
+}
 
 /* Home */
 .greetings {
-    margin: 50px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.greetings-intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #9bb1b5;
+    font-size: 3em;
+    height: min-content;
 }
 .greetings-intro h2 {
-    color: #9bb1b5;
-    padding-top: 100px;
-    margin-bottom: 0;
-    display: block;
-    font-size: 3em;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    font-weight: 400;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    margin-inline-end: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     height: 20px;
 }
-.greetings-name h1 {
+.greetings-intro h1 {
     color: #f3ae97;
-    font-size: 150px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    display: flex;
-    font-weight: 900;
-    height: 150px;
-    margin-inline-start: -10px;
+    font-size: 5em;
+    margin-inline-start: 10px;
+    margin-inline-end: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    height: 270px;
 }
-.greetings-name p {
+.greetings-intro p {
     color: #9bb1b5;
-    margin-inline-start: 30px;
-    display: flex;
+    font-size: 0.5em;
+    margin-inline-start: 100px;
+    margin-inline-end: 0px;
+    margin-block-end: 80px;
+    margin-block-start: 0px;
+    height: min-content;
 }
 .greetings-blurb {
     color: #999ea4;
     display: flex;
+    flex-direction: column;
+}
+.greetings-blurb h2 {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+.more-button {
+    padding: 50px;
+    width: 100%;
+}
+.more-button button {
+    width: 30%;
+    height: 50px;
+    background-color: #f3ae97;
+    font-family: 'IBM Plex Mono';
+}
+.more-button button:hover {
+    background-color: #9bb1b5;
 }
 
 /* About */
 .about {
-    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .about h3 {
     color: #f3ae97;
-    padding: px;
     padding-top: 100px;
     font-size: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-end: 50px;
+    margin-block-start: 0px;
 }
 .about a {
     color: #f3ae97;
@@ -135,15 +175,57 @@ body {
 .about a:hover{
     text-decoration: underline;
 }
+.about p {
+    color: #9bb1b5;
+    margin-inline-start: 40px;
+    margin-inline-end: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
 hr {
-    border-color: #9bb1b5;
-    width: 30%;
-    display: flex;
-    transform: translate(-110%);
-    margin-top: 50px;
+    margin-inline-start: 200px;
+    margin-inline-end: 100px;
+    margin-block-end: 100px;
+    margin-block-start: 100px;
+    height: 400px;
+}
+.about img {
+    border: 5px solid white;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+}
+.education {
+    color: #f3ae97;
+    width: 100%;
+}
+.education h2 {
+    font-size: 2.5em;
+}
+.education p {
+    color: #9bb1b5;
+    font-size: 1.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 20px;
+    width: 60%;
+}
+.bold-text {
+    font-weight: 900px;
 }
 
 /* Projects */
 .projects {
-    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.projects h2 {
+    font-size: 2.5em;
+    color: #f3ae97;
+}
+.projects p {
+    color: #9bb1b5;
+    font-size: 1.5em;
 }

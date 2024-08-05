@@ -7,3 +7,7 @@ function closePopup() {
     popup.style.display = 'none';
     window.location.href='home.html';
 }
+
+function moreStuff() {
+    window.location.href='about.html';
+}
