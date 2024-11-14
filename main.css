@@ -283,6 +283,10 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.projects a {
+    color: #f3ae97;
+    text-decoration: none;
+}
 .projects h2 {
     font-size: 2.5em;
     color: #f3ae97;
